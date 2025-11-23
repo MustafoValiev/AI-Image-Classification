@@ -104,7 +104,3 @@ ai-image-classifier/
 - `POST /api/predict` - Predict if image is AI-generated
 - `GET /api/history/<model_type>` - Get training history
 - `GET /api/models` - List available models
-
-## License
-
-MIT
