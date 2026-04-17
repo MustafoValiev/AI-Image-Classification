@@ -45,7 +45,7 @@ def predict():
     except Exception as e:
         return jsonify({'error': str(e)}), 500
 
-@app.route('/api/history/', methods=['GET'])
+@app.route('/api/history/<model_type>', methods=['GET'])
 def get_history(model_type):
     history_path = f'saved_models/{model_type}_history.json'
     
