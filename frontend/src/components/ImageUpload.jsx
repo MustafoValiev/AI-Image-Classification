@@ -1,8 +1,7 @@
-import { useState } from 'react'
-
-const fileInputRef = useRef(null)
+import { useState, useRef } from 'react'
 
 function ImageUpload({ onUpload, loading }) {
+    const fileInputRef = useRef(null)
     const [preview, setPreview] = useState(null)
     const [dragActive, setDragActive] = useState(false)
 
@@ -44,7 +43,10 @@ function ImageUpload({ onUpload, loading }) {
 
     return (
         <div
-            className={`image-upload ${dragActive ? 'drag-active' : ''}`}
+            style={{
+                ...styles.dropZone,
+                ...(dragActive ? styles.dropZoneActive : {}),
+            }}
             onDragEnter={handleDrag}
             onDragOver={handleDrag}
             onDragLeave={handleDrag}

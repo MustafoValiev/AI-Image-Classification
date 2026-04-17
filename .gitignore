@@ -17,7 +17,7 @@ Desktop.ini
 # -------------------------
 # PYTHON
 # -------------------------
-pycache/
+__pycache__/
 *.py[cod]
 *.pyo
 *.pyd
@@ -29,6 +29,7 @@ build/
 .env
 .venv
 venv/
+.venv311/
 
 # -------------------------
 # NODE / JAVASCRIPT
@@ -48,6 +49,13 @@ package-lock.json
 *.war
 *.ear
 *.iml
+
+# -------------------------
+# PROJECT SPECIFIC
+# -------------------------
+data/
+saved_models/
+uploads/
 *.log
 out/
 target/
@@ -129,3 +137,12 @@ temp/
 *.zip
 *.tar.gz
 *.rar
+
+.venv311/
+saved_models/
+data/
+uploads/
+node_modules/
+__pycache__/
+*.pyc
+.DS_Store"
